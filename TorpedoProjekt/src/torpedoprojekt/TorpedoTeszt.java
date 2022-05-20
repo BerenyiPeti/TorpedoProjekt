@@ -5,24 +5,35 @@
  */
 package torpedoprojekt;
 
+import java.util.Random;
+
 /**
  *
  * @author szf1_a2
  */
 public class TorpedoTeszt {
-    
+
+    private static Random rnd = new Random();
+    private static int[] pozicio = {1, 2, 3};
+    private static int hajoHelye = rnd.nextInt(3) + 1;
+
     public static void main(String[] args) {
-        tesztLoves(3);
+        //System.out.println(tesztLoves(2));
+        tesztLoves(2);
     }
 
-    private static String tesztLoves(int poz) {
-        Hajo hajo = new Hajo();
-        String t = hajo.talalat(4);
-        assert t.equals("talált"): "nem jó a találat ellenőrzése";
-        return "";
+    public static int getHajoHelye() {
+        return hajoHelye;
     }
-    
-    
-    
-    
+
+    public static String tesztLoves(int poz) {
+        int tipp = poz - 1;
+        if (pozicio[tipp] == hajoHelye) {
+            return "talált";
+        } else {
+            return "nem talált";
+
+        }
+    }
+
 }
