@@ -9,13 +9,12 @@ package torpedoprojekt;
  *
  * @author szf1_a2
  */
-public class TorpedoTeszt {
-    public static void main(String[] args) {
-        
-    }
+public class Hajo {
+    private int pozicio;
     
-    public String tesztLoves(int poz) {
+    public String talalat(int poz) {
         return null;
         
     }
 }
+
