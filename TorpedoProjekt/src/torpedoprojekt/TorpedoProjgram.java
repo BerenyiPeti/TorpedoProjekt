@@ -2,14 +2,15 @@
 package torpedoprojekt;
 
 
+public class TorpedoProjgram {
 
-public class Hajo {
-    private int pozicio;
-    
-    public String talalat(int: poz) {
+    public static void main(String[] args) {
         
     }
+    
 }
+
+
 
 
 
